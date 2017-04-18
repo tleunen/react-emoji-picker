@@ -1,5 +1,6 @@
 "use strict";
 
+var PropTypes = require('prop-types');
 var React = require('react');
 var ReactEmoji = require('react-emoji');
 var emojiMap = require('./lib/emojiMap');
@@ -51,7 +52,7 @@ module.exports = React.createClass({
   displayName: 'EmojiPicker',
   mixins: [ReactEmoji],
   propTypes: {
-    query: React.PropTypes.string,
+    query: PropTypes.string,
   },
   getInitialState: function() {
     return {
