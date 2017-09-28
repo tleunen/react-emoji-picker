@@ -1,7 +1,6 @@
-"use strict";
-
 var PropTypes = require('prop-types');
 var React = require('react');
+var createReactClass = require('create-react-class');
 var ReactEmoji = require('react-emoji');
 var emojiMap = require('./lib/emojiMap');
 
@@ -48,7 +47,7 @@ function filterByCategory(opts) {
   return opts.emoji.category === opts.category
 }
 
-module.exports = React.createClass({
+module.exports = createReactClass({
   displayName: 'EmojiPicker',
   mixins: [ReactEmoji],
   propTypes: {

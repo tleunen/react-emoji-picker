@@ -2,7 +2,7 @@
   "name": "@tleunen/react-emoji-picker",
   "version": "1.0.1",
   "description": "A React component providing a visual emoji picker, similar to Slack's",
-  "repository": "https://github.com/chadoh/react-emoji-picker",
+  "repository": "https://github.com/tleunen/react-emoji-picker",
   "main": "index.jsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,12 +16,17 @@
     "emojione",
     "react-emoji"
   ],
-  "author": "Chad Ostrowski <hi+npm@chadoh.com> (chadoh.com)",
+  "contributors": [
+    "Chad Ostrowski <hi+npm@chadoh.com> (chadoh.com)",
+    "Tommy Leunen <tommy.leunen@gmail.com> (tommyleunen.com)"
+  ],
   "license": "ISC",
   "dependencies": {
+    "create-react-class": "^15.6.2",
+    "prop-types": "^15.6.0",
     "react-emoji": "^0.5.0"
   },
   "peerDependencies": {
-    "react": "0.14.x || ^15.0.0-rc"
+    "react": "0.14.x || ^15.0.0-rc || ^16.0.0-rc"
   }
 }
